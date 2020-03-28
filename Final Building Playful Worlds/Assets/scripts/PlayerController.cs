@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public float groundMargin = 1.5f;
        public LayerMask ground_layer;
 
+    public float grabStrength;
+
     private bool ground,  isGrabbing, smallGrab;
     private float velX, velY, velZ;
     private float speed;
@@ -147,7 +149,7 @@ public class PlayerController : MonoBehaviour
 
     void HoldGrab()
     {
-             grabbedObject.velocity = ((dragPoint.transform.position - grabbedObject.position) * 2.5f);
+             grabbedObject.velocity = ((dragPoint.transform.position - grabbedObject.position) * grabStrength);
 
     }
 

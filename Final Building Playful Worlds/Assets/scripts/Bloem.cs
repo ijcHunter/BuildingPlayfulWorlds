@@ -17,7 +17,7 @@ public class Bloem : MonoBehaviour
         if (opgepakt == true)
         {
             bloemParticles.Stop();
-            Debug.Log("Stop de particles");
+           // Debug.Log("Stop de particles");
         }
     }
 }
